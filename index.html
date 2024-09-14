@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <nav>
+
+        <div class="logo">
+            <img src="image/logo.png"><b>Fruity</b>
+        </div>
+        
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Products">Products</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Blog">Blog</a></li>
+        </ul>
+      
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-counter2">0</span> <!-- Counter for the cart items -->
+        </div>
+
+    </nav>
+
+
+
+
+    <!-------------Home--------------->
+
+    <section id="Home">
+
+        <div class="home_left">
+
+            <h1>The Fresh and<br>Organic<span>Fruits and Vegetables</span></h1>
+            <p>
+                Fruits and vegetables contain important vitamins, minerals and plant chemicals. They also contain fibre.
+There are many varieties of fruit and vegetables available and many ways to prepare, cook and serve them.
+A diet high in fruit and vegetables can help protect you against cancer, diabetes and heart disease.
+Eat 5 kinds of vegetable and 2 kinds of fruit every day for good health.
+Most Australians do not eat enough fruit and vegetables.
+When buying and serving fruit and vegetables, aim for variety to get the most nutrients and appeal.
+            </p>
+            <a href="#" class="home_btn">Learn More</a>
+
+        </div>
+
+        <div class="home_right anim">
+            <img src="image/home_image.png">
+        </div>
+
+    </section>
+
+
+
+
+    <!------------------About---------------->
+
+    <div class="about" id="About">
+
+        <div class="about_image">
+            <img src="image/about.png">
+        </div>
+        <div class="about_tag">
+            <h1>About Us</h1>
+            <p>
+                 Fresh Harvest, we are dedicated to bringing the bounty of nature's gooAtdness right to your doorstep. With our wide selection of fresh fruits and vegetables sourced directly from local farms and growers, we offer you the convenience of shopping for premium produce from the comfort of your own home.
+                <br><br>
+                We take pride in delivering only the freshest and highest quality produce to our customers. Our fruits and vegetables are carefully selected and harvested at the peak of ripeness to ensure maximum flavor and nutritional value. By partnering with local farmers who practice sustainable and ethical farming methods, we strive to promote environmental stewardship and support small-scale agriculture.
+            </p>
+            <a href="#" class="about_btn">Learn More</a>
+        </div>
+
+    </div>
+
+
+
+
+    <!------------------Products-------------->
+
+    <div class="products" id="Products">
+
+        <h1>Latest Products</h1>
+
+        <div class="products_main">
+            <p>
+                Introducing our latest arrival, a vibrant addition to your plate! Bursting with flavor and packed with nutrients, our newest offering is sure to delight your taste buds. Sourced from local farms committed to quality and sustainability, this fresh produce is perfect for snacking, cooking, or adding a pop of color to your favorite dishes. Elevate your meals with this delicious and nutritious addition—order now and experience farm-fresh goodness delivered to your doorstep!
+            </p>
+
+            <div class="products_box">
+                <div class="products_card">
+                    <div class="products_img">
+                        <img src="image/produ_1.png">
+                    </div>
+                    <div class="products_tag">
+                        <h2>Products</h2>
+                        <p>
+                            Indulge in the crisp, juicy delight of nature's bounty with our selection of premium apples. Sourced from orchards renowned for their commitment to quality and taste.
+                        </p>
+                        <a href="#" class="products_btn">Learn More</a>
+                    </div>
+                    <div class="cart" onclick="addToCart(this)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-counter">0</span> <!-- Counter for this item -->
+                    </div>
+                </div>
+                <!-- Similarly for other product cards -->
+                
+                <div class="products_card">
+                    <div class="products_img">
+                        <img src="image/produ_2.png">
+                    </div>
+                    <div class="products_tag">
+                        <h2>Products</h2>
+                        <p>
+                            Escape to a tropical oasis with our exquisite selection of fresh pineapples, each one a burst of sunshine in every slice. Grown in the lush fields of tropical regions.
+                        </p>
+                        <a href="#" class="products_btn">Learn More</a>
+                    </div>
+                    <div class="cart" onclick="addToCart(this)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-counter">0</span>
+                    </div>
+                </div>
+                
+                <div class="products_card">
+                    <div class="products_img">
+                        <img src="image/produ_3.png">
+                    </div>
+                    <div class="products_tag">
+                        <h2>Products</h2>
+                        <p>
+                            Experience the vibrant burst of flavor and rich texture of our premium tomatoes, harvested at the peak of ripeness from sun-kissed fields. 
+                        </p>
+                        <a href="#" class="products_btn">Learn More</a>
+                    </div>
+                    <div class="cart" onclick="addToCart(this)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-counter">0</span>
+                    </div>
+                </div>
+               
+                <div class="products_card">
+                    <div class="products_img">
+                        <img src="image/produ_4.png">
+                    </div>
+                    <div class="products_tag">
+                        <h2>Products</h2>
+                        <p> 
+                            Experience the delicate charm and exquisite flavor of our premium Ladyfinger Okra, carefully cultivated and handpicked for peak freshness. With its slender shape and tender texture.
+                        </p>
+                        <a href="#" class="products_btn">Learn More</a>
+                    </div>
+                    <div class="cart" onclick="addToCart(this)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-counter">0</span>
+                </div>
+                
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!------------Banner------------>
+
+    <div class="banner">
+
+        <div class="banner_one">
+            <img src="image/1.png">
+            <div class="banner_tag">
+                <h1>Save UP to 50%</h1>
+                <a href="#" class="banner_btn">Shop Now</a>
+            </div>
+        </div>
+
+        <div class="banner_two">
+            <img src="image/2.png">
+            <div class="banner_tag">
+                <h1>Free Shipping</h1>
+                <p>ON ORDER UP TO $100</p>
+                <a href="#" class="banner_btn">Shop Now</a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-------------------Services--------------->
+
+    <div class="services" id="Services">
+
+        <div class="services_box">
+
+            <div class="services_card">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="services_tag">
+                    <h2>Free Fast Delivery</h2>
+                    <p>
+                        Within 2 to 4 days of free fast Delivery. 
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="services_card">
+
+                <i class="fa-regular fa-face-grin"></i>
+                <div class="services_tag">
+                    <h2>For Quality Products</h2>
+                    <p>
+                        100% high quality product. 
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="services_card">
+
+                <i class="fa-solid fa-tags"></i>
+                <div class="services_tag">
+                    <h2>Special Offer</h2>
+                    <p>
+                        20% off on every fruit.
+
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="services_card">
+
+                <i class="fa-solid fa-headset"></i>
+                <div class="services_tag">
+                    <h2>24 x 7 Support</h2>
+                    <p>
+                        24 x 7 customer support. 
+                    </p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-------------Blog------------------->
+
+    <div class="blog" id="Blog">
+        <h1>Our Blog</h1>
+
+        <div class="blog_box">
+
+            <div class="blog_card">
+                <div class="blog_img">
+                    <img src="image/blog_1.png">
+                </div>
+                <div class="blog_tag">
+
+                    <p class="date">
+                        <i class="fa-solid fa-calendar-days"></i>2024.03.23
+                    </p>
+
+                    <p>
+                        Fruits are botanical structures formed from the mature ovaries of flowering plants. They are typically sweet or sour in taste and are often consumed as part of a balanced diet due to their rich nutrient content.
+                        <br><br>
+                        Fruits exhibit a wide range of flavors, ranging from sweet to tart to tangy. This diversity allows for endless culinary possibilities, as fruits can be combined with other ingredients to create unique taste experiences.
+                    </p>
+                    <p class="like"><i class="fa-solid fa-heart"></i></p>
+                    
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="blog_card_2">
+                
+                <div class="blog_tag">
+
+                    <p class="date">
+                        <i class="fa-solid fa-calendar-days"></i>2024.02.15
+                    </p>
+
+                    <p>
+                        Oranges, lemons, limes, and grapefruits are high in vitamin C, which supports immune function and skin health. They also contain flavonoids and other compounds that may lower the risk of cardiovascular disease.
+                        <br><br>
+                        Bananas are rich in potassium, which is essential for heart health, muscle function, and fluid balance in the body. They also provide carbohydrates for energy and contain vitamins B6 and C.
+                    </p>
+                    <p class="like"><i class="fa-solid fa-heart"></i></p>
+                    
+                </div>
+                <div class="blog_img">
+                    <img src="image/blog_2.png">
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="blog_card">
+                <div class="blog_img">
+                    <img src="image/blog_3.png">
+                </div>
+                <div class="blog_tag">
+
+                    <p class="date">
+                        <i class="fa-solid fa-calendar-days"></i>2024.03.16
+                    </p>
+
+                    <p>
+                        Vegetables are rich in essential vitamins, minerals, fiber, and antioxidants. They are low in calories and fats, making them an excellent choice for maintaining a healthy diet.
+                        <br><br>
+                        Consuming a diet rich in vegetables is associated with numerous health benefits. They can help reduce the risk of chronic diseases such as heart disease, stroke, certain cancers, and type 2 diabetes. The fiber content in vegetables also promotes digestive health and helps maintain a healthy weight.
+                    </p>
+                    <p class="like"><i class="fa-solid fa-heart"></i></p>
+                    
+                </div>
+            </div>
+            
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-------------Footer-------------->
+
+    <footer>
+        <div class="footer_main">
+
+            <div class="footer_tag">
+                <h1>Quick Link</h1>
+                <p>Home</p>
+                <p>About</p>
+                <p>Products</p>
+                <p>Services</p>
+                <p>Blog</p>
+            </div>
+
+            <div class="footer_tag">
+                <h1>Contact</h1>
+                <p><i class="fa-solid fa-location-dot"></i>Gamharia, Jharkhand</p>
+                <p><i class="fa-solid fa-phone"></i>+94 12 345 6789</p>
+                <p><i class="fa-solid fa-phone"></i>+94 25 787 9999</p>
+                <p><i class="fa-solid fa-envelope"></i>fruit123@gmail.com</p>
+            </div>
+
+            <div class="footer_tag">
+                <h1>Follow Us</h1>
+                <p><i class="fa-brands fa-facebook-f"></i>Facebook</p>
+                <p><i class="fa-brands fa-twitter"></i>Twitter</p>
+                <p><i class="fa-brands fa-instagram"></i>Instagram</p>
+                <p><i class="fa-brands fa-linkedin-in"></i>Linkedin</p>
+                <p><i class="fa-brands fa-google"></i>Google</p>
+            </div>
+
+            <div class="footer_tag">
+                <h1>Online Payments</h1>
+                <img src="image/card1.png">
+                <img src="image/card2.png">
+                <img src="image/card3.png">
+                <img src="image/card4.png">
+            </div>
+
+        </div>
+
+        <p class="end">Crafted By<span><i class="fa-solid fa-face-grin"></i>Aishwarya Rana</span></p>
+    </footer>
+
+
+
+
+
+
+
+
+    
+
+
+    <!-- JavaScript for adding items to cart -->
+    <script>
+        function addToCart(cart) {
+            // Get the counter for this product
+            const productCounter = cart.querySelector('.cart-counter');
+            // Get the total counter
+            const totalCounter = document.querySelector('.cart-counter2');
+
+            // Increment the counters
+            let productCount = parseInt(productCounter.textContent) + 1;
+            let totalCount = parseInt(totalCounter.textContent) + 1;
+
+            // Update the counters
+            productCounter.textContent = productCount;
+            totalCounter.textContent = totalCount;
+        }
+        document.querySelector('.hamburger').addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.toggle('active');
+});
+
+    </script>
+</body>
+</html>
